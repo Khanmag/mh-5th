@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisine table</title>
+    <style>
+      table * {
+        /* border: 1px solid rgb(0, 0, 0); */
+        border: 1px solid #000000;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th rowspan="2">Kuchnia</th>
+        <th colspan="2">Dania na zimno</th>
+        <th colspan="2">Główne dania</th>
+        <th rowspan="2">Na słodko</th>
+      </tr>
+      <tr>
+        <th>Sałatki</th>
+        <th>Przekąski</th>
+        <th>Pierwsze dania</th>
+        <th>Drugie dania</th>
+      </tr>
+      <tr>
+        <td rowspan="3">Polska</td>
+        <td>Surówka</td>
+        <td>Kanapki z serem</td>
+        <td>Żurek</td>
+        <td>Bigos</td>
+        <td>Karpatka</td>
+      </tr>
+      <tr>
+        <td>Sałatka Jarzynowa</td>
+        <td>Śledź w śmietanie</td>
+        <td>Zupa pomidorowa</td>
+        <td>Pierogi ruskie</td>
+        <td>Pączki</td>
+      </tr>
+      <tr>
+        <td>Sałatka weselna</td>
+        <td>Grzanki ze smalcem</td>
+        <td>Barszcz czerwony</td>
+        <td>Duszony kurczak</td>
+        <td>Rogal Św.Marcina</td>
+      </tr>
+    </table>
+    <section>
+        <picture>
+            <source media="(min-width: 1500px)" srcset="barszczyk_z_uszkami.jpg" />
+            <source media="(min-width: 1005px)" srcset="pierogi_ruskie.jpg" />
+            <img src="surówka.jpg" alt="default img" />
+    </section>
+  </body>
+</html>
