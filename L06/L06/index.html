@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables, Lists, Pictures</title>
+    <style>
+      table * {
+        /* border: 1px solid rgb(red, green, blue); */
+        border: 1px solid rgb(red, green, blue);
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Tables, Lists, Pictures</h1>
+    <section id="Catalog">
+      <header>
+        <h2>Клиенты</h2>
+      </header>
+      <table>
+        <tr>
+          <th>Имя</th>
+          <th>Призвание</th>
+        </tr>
+        <tr>
+          <td colspan="2">Bill</td>
+          <td>Smith</td>
+        </tr>
+        <tr>
+          <td rowspan="3">Alex</td>
+          <td>Builder</td>
+        </tr>
+        <tr>
+          <td>Clint</td>
+          <td>Sniper</td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>Животное</th>
+          <th>Возраст</th>
+        </tr>
+        <tr>
+          <td>Черепаха</td>
+          <td>150 лет</td>
+        </tr>
+        <tr>
+          <td>Слон</td>
+          <td>300 лет</td>
+        </tr>
+        <tr>
+          <td>Муравей</td>
+          <td>10 лет</td>
+        </tr>
+      </table>
+    </section>
+    <section>
+      <header>
+        <h2>Lists</h2>
+        <nav>
+          <ul>
+            <li><a href="#catalog">Catalog</a></li>
+            <li><a href="#about_us">About us</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h3>Unordered list</h3>
+        <!-- <ol type="I" start="3" reversed> -->
+        <ul>
+          <ol>
+            <li>Anna</li>
+            <li>Bill</li>
+            <li>Clint</li>
+            <li>Den</li>
+            <li>Eshley</li>
+          </ol>
+        </ul>
+      </section>
+      <section>
+        <h3>Pictures</h3>
+        <img
+          src="https://klike.net/uploads/posts/2020-02/1581238408_17.jpg"
+          alt="картина с морем"
+          title="2020, февраль"
+          width="300px"
+        />
+        <!-- title и задание размера не рекомендуется  использовать -->
+        <picture>
+          <source />
+          <source media="(min-width: 800px)" srcset="./red.jpg" />
+          <!-- Когда экран больше 800 пикселей -->
+          <source media="(min-width: 600px)" srcset="./green.jpg" />
+          <!-- Если экран больше 600 пикселей  -->
+          <img src="./blue.jpg" alt="default img" />
+        </picture>
+      </section>
+    </section>
+  </body>
+</html>
