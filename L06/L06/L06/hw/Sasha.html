@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables, Lists, Pictures</title>
+    <style>
+      table * {
+        /* border: 1px solid rgb(red, green, blue); */
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HW L06 Tables, Lists, Pictures</h1>
+    <section>
+      <header>
+        <h2>Русская Кухня</h2>
+      </header>
+      <table>
+        <tr>
+          <th rowspan="2">Кухня</th>
+          <th colspan="2">Холодные блюда</th>
+          <th colspan="2">Горячие блюда</th>
+          <th rowspan="2">Десерты</th>
+        </tr>
+        <tr>
+          <th>Салаты</th>
+          <th>Закуски</th>
+          <th>Первые блюда</th>
+          <th>Вторые блюда</th>
+        </tr>
+      </table>
+    </section>
+    <picture>
+      <section>
+        <h2>Pictures</h2>
+        <picture>
+          <source media="(min-width: 400px)" srcset="./1.jpg" />
+          <source media="(min-width: 600px)" srcset="./2.jpg" />
+          <source media="(min-width: 800px)" srcset="./3.jpg" />
+          <source media="(min-width: 1280px)" srcset="./4.jpg" />
+          <source media="(min-width: 1440px)" srcset="./5.jpg" />
+
+          <img src="./2.jpg" alt="default img" />
+        </picture>
+
+        <!-- если экран больше 400 пикселей -->
+      </section>
+    </picture>
+  </body>
+</html>
