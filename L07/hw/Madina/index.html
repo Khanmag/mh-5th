@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>User Data</legend>
+        <label for="login">Name</label>
+        <input type="text" placeholder="Ivan" />
+        <br>
+        <label for="email">e-mail</label>
+        <input type="email" value="" placeholder="example@mail.ru">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" placeholder="********">
+        <br>
+        <label for="checkbox">
+            <span>Remember me</span>  
+            <input type="checkbox" />
+            <fieldset> 
+                <legend>Gender</legend>
+                <label for="">
+                    <span>male</span>
+                    <input type="radio" name="gender" id="" />
+                  </label>
+                  <br>
+                  <label for="">
+                    <span>female</span>
+                    <input type="radio" name="gender" id="" />
+                  </label>
+                  <br>
+                  <label for="">
+                    <span>other</span>
+                    <input type="radio" name="gender" id="" />
+                  </label>
+            </fieldset>
+            <label for="Age">Age</label>
+            <input type="number">
+            <br>
+            <button type="reset">RESET</button>
+            <button type="submit">SEND FORM</button>            
+      </fieldset>
+    </form>
+  </body>
+</html>
