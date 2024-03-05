@@ -1,0 +1,37 @@
+/*h2 {
+    color: blue;
+}
+.red_title {
+    border: 2px solid red;
+}
+#uniq {
+    background-color: #0000aa33;
+}
+p {
+    font-size: 32px;
+}
+.large_text {
+    font-size: 40px;
+}
+#large_text {
+    font-size: 50px;
+}*/
+
+h1 {
+    color:  white;
+    border: 2px solid green;
+    background-color:  green;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+.formula {
+    color: rgb(57, 197, 57);
+}
+
+.line {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
