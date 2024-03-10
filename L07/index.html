@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fields</title>
+  </head>
+  <body>
+    <form onsubmit="alert('submit')">
+      <fieldset>
+        <legend>Формочка</legend>
+
+        <!-- <p>Имя</p> -->
+        <label for="login">Имя</label>
+        <input
+          name="login"
+          id="login"
+          required
+          value="Евгений"
+          onchange="alert('change')"
+        />
+        <br />
+
+        <label>
+          <span>Фамилия</span>
+          <input name="lastName" placeholder="Иванов" disabled />
+        </label>
+        <br />
+
+        <input type="number" />
+        <input type="email" name="email" id="email" />
+        <input type="password" />
+        <input type="tel" />
+
+        <br />
+
+        <label>
+          <span>Замнить меня</span>
+          <input type="checkbox" />
+        </label>
+
+        <div>
+          <label>
+            <span>male</span>
+            <input type="radio" name="gender" />
+          </label>
+          <label>
+            <span>female</span>
+            <input type="radio" name="gender" />
+          </label>
+          <label>
+            <span>other</span>
+            <input type="radio" name="gender" />
+          </label>
+        </div>
+
+        <input type="color" />
+        <input type="date" />
+        <input type="range" value="30" />
+        <input type="url" />
+        <input type="file" />
+        <input type="hidden" name="asfsdf" value="с первой страницы" />
+
+        <br />
+
+        <input type="button" value="Просто кнопка" />
+        <input type="submit" value="Отправка инпутом" />
+        <input type="reset" value="Ресет инпутом" />
+
+        <br />
+        <textarea></textarea>
+
+        <div>
+          <a href="mailto:solo@mail.com">send Email</a>
+          <a href="tel:89886664422">89886664422</a>
+          <a>89886664422</a>
+        </div>
+
+        <button type="button" onclick="alert(`На кнопку нажали!!!`)">
+          <img src="../L06/blue.jpg" width="50px" alt="" />
+          Кнопка
+        </button>
+        <button type="submit">Отправить</button>
+        <button type="reset">Сбросить</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

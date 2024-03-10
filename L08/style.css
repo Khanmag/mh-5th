@@ -1,0 +1,78 @@
+/* h2 {
+  color: blue;
+  color: greenyellow;
+} */
+
+* {
+  text-decoration: overline;
+}
+img {
+  object-fit: cover;
+}
+
+.red_title {
+  background-color: red;
+  border: 2px solid red;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-top: 5px solid black;
+}
+#uniq {
+  background-color: #0000aa33;
+}
+/* tag 1 */
+/* class 10 */
+/* id 100 */
+/* inline 1000 */
+
+/* 1 */
+/* p {
+  font-size: 32px;
+} */
+/* 10 */
+/* .large_text {
+  font-size: 40px;
+} */
+/* 11 */
+/* p.large_text {
+  font-size: 16px;
+} */
+p,
+.bold {
+  font-size: 30px;
+  font-weight: bolder;
+}
+.large_text > .bold {
+  color: lightcoral;
+}
+div ~ span {
+  background-color: burlywood;
+}
+div + span {
+  background-color: lightgreen;
+}
+
+img {
+  width: 400px;
+}
+/* img[alt="delete"] {
+  display: none;
+} */
+/* img[qwerty="random"] {
+  border: 5px solid blue;
+} */
+img[qwerty^="r"] {
+  border: 5px solid yellow;
+}
+img[qwerty*="n"] {
+  border: 5px solid rgb(0, 166, 255);
+}
+img[qwerty$="m"] {
+  border: 5px solid rgb(0, 255, 145);
+}
+img[src$="jpeg"] {
+  width: 100px;
+  height: 600px;
+  object-fit: cover;
+  object-position: right;
+}

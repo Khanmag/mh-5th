@@ -39,13 +39,13 @@
       <section>
         <h2>Pictures</h2>
         <picture>
-          <source media="(min-width: 400px)" srcset="./1.jpg" />
-          <source media="(min-width: 600px)" srcset="./2.jpg" />
+          <!-- width >= 400 -->
+          <source media="(min-width: 1280px)" srcset="./4.png" />
           <source media="(min-width: 800px)" srcset="./3.jpg" />
-          <source media="(min-width: 1280px)" srcset="./4.jpg" />
-          <source media="(min-width: 1440px)" srcset="./5.jpg" />
-
-          <img src="./2.jpg" alt="default img" />
+          <source media="(min-width: 600px)" srcset="./2.jpg" />
+          <source media="(min-width: 400px)" srcset="./1.jpg" />
+          <!-- <source media="(min-width: 1440px)" srcset="./5.jpeg" /> -->
+          <img src="./5.jpeg" alt="default img" />
         </picture>
 
         <!-- если экран больше 400 пикселей -->
