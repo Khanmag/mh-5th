@@ -1,0 +1,40 @@
+/* header { */
+    /*   display: flex; */
+    /*   justify-content: center; */
+    /* } */
+    
+    nav {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      background-color: black;
+      margin: 0 auto;
+      height: 25px;
+      align-items: center;
+    /*   gap: 5%; */
+      padding: 15px;
+    }
+    
+    nav > a {
+      color: white;
+      text-decoration: none;
+    }
+    nav > a:hover {
+      text-decoration: underline;
+      color: gold;
+    }
+    
+    article {
+      display: flex;
+      margin: 0 auto;
+      justify-content: space-evenly;
+      background-color: lightgreen;
+    }
+    
+    article > div {
+      width: 100px;
+      height: 100px;
+      justify-content: center;
+      flex-direction: row;
+      margin: 50px;
+    }
