@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    /* div > div {
+      display: inline-block;
+      display: inline;
+      width: 50px;
+      height: 50px;
+      background-color: red;
+    } */
+    .FlexContainer {
+      display: flex;
+      /* разрешили переносить элементы */
+      flex-wrap: wrap;
+      /* padding: 10px; */
+      /* width: max-content; */
+      height: 800px;
+      /* gap: 10px; */
+      background-color: lightgrey;
+      /* justify-content: flex-start; default */
+      /* justify-content: space-evenly; */
+      /* align-items: stretch; */
+      
+      /* напраление */
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
+      
+      /* align-content: stretch; */
+      /* align-content: center; */
+    }
+    .FlexElement {
+      width: 100px;
+      height: 100px;
+      /* padding: 50px; */
+      /* margin-top: 50px; */
+      /* margin: 10px; */
+      /* height: 100%; */
+      background-color: lightgreen;
+      border: 1px solid black;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .LeftBlock {
+      align-self: start;
+      order: 1;
+    }
+    .RightBlock {
+      align-self: end;
+      order: 12;
+    }
+    .BigBlock {
+      align-self: stretch;
+      width: auto;
+      order: 5;
+    }
+  </style>
+</head>
+<body>
+  <h1>L11</h1>
+
+  <section>
+    <h2>Flex</h2>
+    <div class="FlexContainer">
+      <div class="FlexElement"><span>1</span></div>
+      <div class="FlexElement"><span>2</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement"><span>4</span></div>
+      <div class="FlexElement"><span>5</span></div>
+      <div class="FlexElement"><span>6</span></div>
+      <div class="FlexElement"><span>1</span></div>
+      <div class="FlexElement"><span>2</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement LeftBlock"><span>400</span></div>
+      <div class="FlexElement RightBlock"><span>500</span></div>
+      <div class="FlexElement BigBlock"><span>600</span></div>
+      <div class="FlexElement"><span>1</span></div>
+      <div class="FlexElement"><span>2</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement"><span>4</span></div>
+      <div class="FlexElement"><span>5</span></div>
+      <div class="FlexElement"><span>6</span></div>
+      <div class="FlexElement"><span>1</span></div>
+      <div class="FlexElement"><span>2</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement"><span>4</span></div>
+      <div class="FlexElement"><span>5</span></div>
+      <div class="FlexElement"><span>6</span></div>
+      <div class="FlexElement"><span>1</span></div>
+      <div class="FlexElement"><span>2</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement"><span>4</span></div>
+      <div class="FlexElement"><span>5</span></div>
+      <div class="FlexElement"><span>6</span></div>
+      <div class="FlexElement"><span>3</span></div>
+      <div class="FlexElement"><span>4</span></div>
+      <div class="FlexElement"><span>5</span></div>
+      <div class="FlexElement"><span>6</span></div>
+      <div class="FlexElement"><span>6</span></div>
+    </div>
+  </section>
+</body>
+</html>
