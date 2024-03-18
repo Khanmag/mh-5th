@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <style>
+    /* div > div {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background-color: red;
+     } */
+    .FlexContainer {
+      display: flex;
+      flex-wrap: wrap;
+      /* align-items: stretch;  */
+      /* align-content: center; */
+      /* padding: 10px; */
+      /* width: max-content; */
+      height: 800px;
+      /* gap: 10px; */
+      background-color: lightgray;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .FlexElement {
+      width: 100px;
+      height: 100px;
+      background-color: lightgreen;
+      border: 1px solid black;
+      /* margin: 10px; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .LeftBlock {
+        align-self: start;
+        order: 1;
+    }
+    .RightBlock {
+        align-self: end;
+        order: 12;
+    }
+    .BigBlock {
+        align-self: stretch;
+        width: auto;
+        order: 5;
+    }
+  </style>
+  <body>
+    <h1>L11</h1>
+    <div></div>
+
+    <section>
+      <h2>Flex</h2>
+      <div class="FlexContainer">
+        <div class="FlexElement"><span>1</span></div>
+        <div class="FlexElement"><span>2</span></div>
+        <div class="FlexElement"><span>3</span></div>
+        <div class="FlexElement"><span>4</span></div>
+        <div class="FlexElement"><span>5</span></div>
+        <div class="FlexElement"><span>6</span></div>
+        <div class="FlexElement"><span>7</span></div>
+        <div class="FlexElement LeftBlock" ><span>800</span></div>
+        <div class="FlexElement RightBlock"><span>900</span></div>
+        <div class="FlexElement BigBlock"><span>1000</span></div>
+        <div class="FlexElement"><span>11</span></div>
+        <div class="FlexElement"><span>12</span></div>
+        <div class="FlexElement"><span>13</span></div>
+        <div class="FlexElement"><span>14</span></div>
+        <div class="FlexElement"><span>15</span></div>
+        <div class="FlexElement"><span>16</span></div>
+        <div class="FlexElement"><span>17</span></div>
+        <div class="FlexElement"><span>18</span></div>
+        <div class="FlexElement"><span>19</span></div>
+        <div class="FlexElement"><span>20</span></div>
+        <div class="FlexElement"><span>21</span></div>
+        <div class="FlexElement"><span>22</span></div>
+        <div class="FlexElement"><span>23</span></div>
+        <div class="FlexElement"><span>24</span></div>
+        <div class="FlexElement"><span>25</span></div>
+        <div class="FlexElement"><span>26</span></div>
+        <div class="FlexElement"><span>27</span></div>
+        <div class="FlexElement"><span>28</span></div>
+        <div class="FlexElement"><span>29</span></div>
+        <div class="FlexElement"><span>30</span></div>
+        <div class="FlexElement"><span>31</span></div>
+        <div class="FlexElement"><span>32</span></div>
+        <div class="FlexElement"><span>33</span></div>
+        <div class="FlexElement"><span>34</span></div>
+        <div class="FlexElement"><span>35</span></div>
+        
+
+      </div>
+    </section>
+  </body>
+</html>

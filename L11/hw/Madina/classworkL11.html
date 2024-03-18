@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex</title>
+  </head>
+  <style>
+    section > div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    div.FlexElement {
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+      border: 2px solid violet;
+    }
+  </style>
+  <body>
+    <h1>L11</h1>
+    <div></div>
+
+    <section>
+      <h2>Flex</h2>
+      <div class="FlexContainer">
+        <div class="FlexElement">1</div>
+        <div class="FlexElement">2</div>
+        <div class="FlexElement">3</div>
+        <div class="FlexElement">4</div>
+        <div class="FlexElement">5</div>
+        <div class="FlexElement">6</div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+section > div {
+    min-width: 50px;
+    min-height: 50px;
+    background-color: orange;
+    border: 1px solid black;
+}
+section {
+    margin: 30px auto;
+    display: flex;
+    width: 500px;
+    height: 400px;
+    background-color: black;
+    padding: 10px;
+}
+.FlexContainer {
+    
+    display: flex; 
+    flex-flow: column-reverse wrap-reverse;     
+    /* flex-wrap: wrap;
+    flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    /* align-content: flex-end; */
+    /* gap: 10px; */
+}
+.FlexElement {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.None {
+    visibility: hidden;
+    order: 10;
+}
+.block3 {
+    align-self: start;
+}
+.block7 {
+    order: 1;
+
+}
+
+.block8 {
+    align-self: start;
+    order: 3;
+}
+
+.block9 {
+    align-self: stretch;
+    width: auto;
+    order: 2;
+}
+
+.block10 {
+    align-self: end;
+    order: 5;
+}
