@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.gridContainer > * {
+  border: 2px solid green;
+  background-color: aquamarine;
+  /* width: 100px; */
+  /* height: 100px; */
+  /* min-height: 100px; */
+}
+
+.gridContainer { 
+  display: grid;
+  background-color: lightblue;
+  height: 800px; 
+  gap: 10px;
+  /* grid-template-columns: 100px 30% 20rem 1fr; */
+  /* grid-template-columns: 500px 2fr 3fr; */
+  grid-template-columns: repeat(3, 200px);
+  /* grid-template-rows: 100px 300px 200px; */
+  /* grid-template-columns: repeat(auto-fill, 100px); */
+  /* grid-template-columns: repeat (auto-fit, minmax(180px, 1fr)); */
+  grid-template-rows: 200px 200px 200px;
+  /* grid-template-areas: */
+    /* "a1 a2 a3 a4"
+    "a5 a6 a7 a8" */
+    /* "a a b b"
+    "h e e c"    
+    "g e e c"
+    "f f d d"; */
+  /* grid-template: 
+    "a a b b" 150px
+    "h e e c" 150px
+    "g e e c" 150px
+    "f f d d" 150px / 150px 150px 150px 150px; */
+  /* justify-content: end; */
+  /* align-content: end; */
+  /* justify-items: end; */
+  /* align-items: center; */
+}
+/* .gridElement6 { */
+    /* align-self: stretch; */
+    /* justify-self: stretch; */
+/* } */
+
+/* .gridElement3 { */
+  /* align-self: end; */
+  /* justify-self: left; */
+
+/* } */
+.gridElement4 {
+    grid-area: 4/3/5/4;
+}
+
+.gridElement6 {
+    grid-column: span 2;
+    /* grid-area: ; */
+}
+
+.gridElement8 {
+    /* grid-column-start: 2; */
+    /* grid-column-end: 4; */
+    /* grid-column: 3/4; */
+    /* grid-row: 2/3; */
+    /* grid-column: span 2; */
+    /* grid-area: 2/3/3/4; */
+    grid-area: 2/3/3/4;
+}
