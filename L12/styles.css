@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 80px;
+}
+.gridContainer > * {
+  border: 2px solid green;
+  background-color: aquamarine;
+  /* width: 100px; */
+  /* height: 100px; */
+  /* min-height: 200px; */
+}
+
+.gridContainer {
+  display: grid;
+  height: 800px;
+  gap: 10px;
+  background-color: lightblue;
+  /* display: flex; */
+  grid-template-columns: repeat(3, 200px);
+  /* grid-template-columns: 500px 2fr 3fr; */
+  /* grid-template-columns: repeat(auto-fit, max-content); */
+  grid-template-rows: 200px 200px 200px;
+  /* grid-template-areas:
+    "a1 a1 a2 a2"
+    "a8 a5 a5 a3"
+    "a7 a5 a5 a3"x
+    "a6 a6 a4 a4"; */
+  /* grid-template:
+    "a1 a1 a2 a2" 150px
+    "a8 a5 a5 a3" 150px
+    "a7 a5 a5 a3" 150px
+    "a6 a6 a4 a4" 150px / 150px 150px 150px 150px; */
+
+  /* justify-content: flex-start; */
+  /* align-content: end; */
+  /* justify-items: end; */
+  /* align-items: center; */
+}
+/* .gridElement6 {
+  align-self: stretch;
+  justify-self: stretch;
+} */
+/* свойства для 3го элемента, чтобы он располагался в левом нижнем углу ячейки */
+/* .gridElement3 {
+  justify-self: flex-start;
+  align-self: flex-end;
+} */
+.gridElement6 {
+  grid-column: span 2;
+}
+.gridElement8 {
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  /* grid-column: 2/4; */
+  /* grid-column: span 2; */
+  /* grid-column: 3/4;
+  grid-row: 2/3; */
+  grid-area: 2/3/3/4;
+  /* rowStart/colStart/rowEnd/colEnd */
+}
+.gridElement4 {
+  grid-column: 3/4;
+  grid-row: 4/5;
+  /* grid-area: 4/3/5/4; */
+}
+/* пусть 3й элемент займёт место, которое освободил 4й */
