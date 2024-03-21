@@ -1,0 +1,35 @@
+body {
+  margin: 0 auto;
+  background: black;
+  height: 100%;
+}
+/* span {
+  color: hsl(172, 76%, 42%);
+  font-size: 80px;
+  position: absolute;
+} */
+.gridContainer div {
+  border: 2px solid black;
+  min-height: 100px;
+}
+.gridContainer {
+  display: grid;
+  background-color: white;
+  height: 1000px;
+  width: 1000px;
+  gap: 10px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-areas:
+    "gridElement1 gridElement1 gridElement2 gridElement3"
+    "gridElement7 gridElement5 gridElement5 gridElement3"
+    "gridElement8 gridElement5 gridElement5 gridElement4"
+    "gridElement8 gridElement6 gridElement6 gridElement6";
+  justify-content: center;
+  align-content: center;
+  span {
+    color: hsl(172, 76%, 42%);
+    font-size: 80px;
+    position: absolute;
+  }
+}
