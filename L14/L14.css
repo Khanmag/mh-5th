@@ -30,6 +30,17 @@ div {
     height: 200px;
     background-color: blueviolet;
   }
+
+  .first {
+    order: 1;
+  }
+
+  .second {
+    order: 3;
+  }
+  .third {
+    order: 1;
+  }
 }
 
 @media (max-width: 780px) {
