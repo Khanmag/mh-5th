@@ -12,6 +12,12 @@ body {
   border: 2px solid black;
   min-height: 100px;
 }
+.gridContainer > span {
+  grid-area: title;
+  color: hsl(172, 76%, 42%);
+  font-size: 80px;
+}
+/* вот так */
 .gridContainer {
   display: grid;
   background-color: white;
@@ -19,17 +25,22 @@ body {
   width: 1000px;
   gap: 10px;
   grid-template-columns: 200px 200px 200px 200px;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-rows: 200px 200px 200px 200px 200px;
   grid-template-areas:
+    "title title title title title"
     "gridElement1 gridElement1 gridElement2 gridElement3"
     "gridElement7 gridElement5 gridElement5 gridElement3"
     "gridElement8 gridElement5 gridElement5 gridElement4"
     "gridElement8 gridElement6 gridElement6 gridElement6";
   justify-content: center;
   align-content: center;
+
   span {
+    grid-area: title;
     color: hsl(172, 76%, 42%);
     font-size: 80px;
-    position: absolute;
   }
 }
+
+
+
