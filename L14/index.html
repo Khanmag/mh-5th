@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive</title>
+    <style>
+      section {
+        /* width: 900px; */
+        /* display: flex;
+        flex-wrap: wrap;
+        justify-content: center; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 300px);
+        /* align-items: center; */
+        /* justify-items: center; */
+      }
+      div {
+        display: inline-block;
+        /* width: 400px; */
+        /* width: 30%; */
+        /* height: 400px; */
+        /* height: 30%; */
+        background-color: red;
+        border: 1px solid black;
+      }
+      /* Применится когда ширина экрана меньше 960px */
+      @media (max-width: 960px) {
+        section {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 300px);
+        }
+        /* .last_element */
+        section > div:last-child {
+          grid-column: span 2;
+        }
+        div {
+          background-color: lightgreen;
+        }
+      }
+      @media (max-width: 600px) {
+        section {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, 300px);
+        }
+        /* .last_element */
+        section > div:last-child {
+          grid-column: span 1;
+        }
+        div {
+          background-color: lightblue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adaptive</h1>
+    <section>
+      <div class="first">1</div>
+      <div class="second">2</div>
+      <div class="third">3</div>
+    </section>
+    <section>
+      <h2>TASK</h2>
+      <p>
+        Выведите 3 блока, которые на большом экране имеют ширину по 500px,
+        высоту 300px. Блоки называются 1, 2, 3
+      </p>
+      <p>На экранах меньше 1080px размер - 400 / 200 . порядок - 2 3 1</p>
+      <p>На экранах меньше 780px размер - 300 / 100 . порядок - 3 1 2</p>
+    </section>
+  </body>
+</html>

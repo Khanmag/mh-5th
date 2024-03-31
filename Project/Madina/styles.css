@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sen", sans-serif;
+  width: 1440px;
+  height: 715px;
+  top: 900px;
+  gap: 0px;
+  opacity: 0px;
+  background: black;
+  color: aliceblue;
+}
+
+section {
+  display: grid;
+  grid-template-columns: 416px 416px 416px;
+  grid-template-rows: 25px 132px 141px 36px 72px;
+  /* border: 2px solid red; */
+  padding-top: 120px;
+  padding-left: 72px;
+  gap: 24px;
+}
+
+.exp {
+  grid-column: span 3;
+}
+
+.workexp {
+  text-transform: uppercase;
+  color: rgba(132, 145, 160, 1);
+  grid-row: span 2;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+.header {
+  grid-column: span 2;
+}
+h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 55px;
+  font-weight: 700;
+  line-height: 66.17px;
+  text-align: left;
+}
+
+.number {
+  color: rgba(132, 145, 160, 1);
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 140.77px;
+  text-align: left;
+}
+
+
+.title {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
+
+.word1 {
+    color: rgba(60, 199, 78, 1);
+}
+
+.word2 {
+    color: rgba(96, 155, 255, 1);
+}
+
+.word3 {
+    color: rgba(233, 93, 144, 1);
+}
+
+.text {
+  color: rgba(132, 145, 160, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
