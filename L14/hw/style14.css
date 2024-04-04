@@ -1,0 +1,150 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+  height: 715px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: black;
+  font-family: "Sen", sans-serif;
+}
+.wrapper > div {
+  align-self: flex-start;
+  /* font-family: "Overpass Mono"; */
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: start;
+  padding-top: 135px;
+  color: lightgrey;
+  padding-left: 75px;
+}
+.wrapper h2 {
+  align-self: flex-start;
+  text-align: left;
+  max-width: 800px;
+  max-height: 132px;
+  font-size: 55px;
+  line-height: 66, 17px;
+  padding-left: 75px;
+  padding-top: 5px;
+  margin: 0;
+  color: white;
+}
+.FlexContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.FlexContainer > div {
+  width: 416px;
+  height: 271px;
+  color: lightgrey;
+  padding-top: 50px;
+}
+.FlexContainer h3 {
+  width: 126;
+  height: 141;
+  color: #8491a0;
+  font-family: "Sen", sans-serif;
+  font-size: 117px;
+  font-weight: 400;
+  line-height: 140.77px;
+  text-align: left;
+}
+.FlexContainer h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
+.w1 {
+  color: rgb(93, 213, 93);
+}
+.w2 {
+  color: rgb(70, 70, 194);
+}
+.w3 {
+  color: rgb(200, 78, 155);
+}
+.description {
+  width: 368px;
+  height: 48px;
+  top: 199px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding-right: 30px;
+  padding-top: 20px;
+}
+@media (max-width: 1440px) {
+  .wrapper {
+    max-width: 768px;
+    height: 757px;
+    background-color: black;
+  }
+  .wrapper h2 {
+    align-items: flex-start;
+    text-align: left;
+    max-height: 132px;
+    max-width: 688px;
+  }
+  .FlexContainer {
+    padding-left: 40px;
+  }
+  .FlexContainer > div {
+    width: 213px;
+    height: 369px;
+    color: lightgrey;
+  }
+  .description {
+    width: 197px;
+    height: 96px;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    width: 360px;
+    height: 1192px;
+    background-color: black;
+  }
+  .wrapper > div {
+    padding-left: 20px;
+    padding-top: 50px;
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .wrapper h2 {
+    height: 117px;
+    width: 320px;
+    font-size: 32px;
+    padding-left: 20px;
+  }
+  .FlexContainer {
+    gap: 240px;
+  }
+
+  .FlexContainer > div {
+    width: 320px;
+    height: 72px;
+  }
+  .description {
+    width: 320px;
+    height: 48px;
+  }
+}
