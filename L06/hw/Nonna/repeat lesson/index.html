@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table, lists, Picture</title>
+    <style>
+      table * {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table, lists, Picture</h1>
+    <section>
+      <header>
+        <h2>Tables</h2>
+      </header>
+      <table>
+        <tr>
+          <th>Животное</th>
+          <th>Возраст</th>
+        </tr>
+        <tr>
+          <td>Черепаха</td>
+          <td>150 лет</td>
+        </tr>
+        <tr>
+          <td>Слон</td>
+          <td>90 лет</td>
+        </tr>
+        <tr>
+          <td>Муравей</td>
+          <td>9 лет</td>
+        </tr>
+      </table>
+    </section>
+
+    <header>
+      <h2>Lists</h2>
+      <nav>
+        <ul>
+          <li><a href="#">Catalog</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Unordered list</h3>
+      <ul>
+        <li>cat</li>
+        <li>dog</li>
+        <li>turtle</li>
+        <li>horse</li>
+        <li>squire</li>
+      </ul>
+      <h3>Order list</h3>
+      <!-- <ol type="I" start="3" reversed> -->
+      <ol>
+        <li>Anna</li>
+        <li>Bill</li>
+        <li>Clint</li>
+        <li>Den</li>
+        <li>Elen</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3>Data list</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </section>
+
+    <section>
+      <img
+        src="https://klike.net/uploads/posts/2020-02/1581238408_17.jpg"
+        alt="картинка с морем"
+        title="2020, февраль"
+        width="300px"
+      />
+    </section>
+
+    <section>
+      <h3>Pictures</h3>
+      <picture>
+        <source media="(min-width: 800px)" srcset="./red.jpg" />
+        <source media="(min-width: 600px)" srcset="./green.jpg" />
+        <img src="./blue.jpg" alt="default img" />
+      </picture>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Sen:wght@400..800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Sen", sans-serif;
+  color: #ffffff;
+}
+main {
+  background-color: #1c1c1e;
+  padding: 30px;
+}
+.shadow_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #8491a0;
+}
+.h2_wrapper {
+  max-width: 690px;
+  font-size: 50px;
+  line-height: 60px;
+  padding: 10px 0px 20px;
+  color: #ffffff;
+}
+@media (max-width: 580px) {
+  .h2_wrapper {
+    font-size: 32px;
+    line-height: 38px;
+  }
+}
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+@media (max-width: 580px) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
+.number {
+  font-size: 117px;
+  color: #8491a0;
+  line-height: 140px;
+}
+
+.gridConteiner__item h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 36px;
+}
+.decoration {
+  top: 199px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #8491a0;
+  line-height: 24px;
+}
+.green_text {
+  color: #3cc74e;
+}
+.blue_text {
+  color: #609bff;
+}
+.pink_text {
+  color: #e95d90;
+}
