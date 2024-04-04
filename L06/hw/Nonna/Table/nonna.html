@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table, lists, Picture</title>
+    <style>
+      table * {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h1>Аргентинская кухня</h1>
+      </header>
+      <table>
+        <tr>
+          <th rowspan="2">Кухня</th>
+          <th colspan="2">Холодные блюда</th>
+          <th colspan="2">Горячие Блюда</th>
+          <th rowspan="2">Десерты</th>
+        </tr>
+        <tr>
+          <td>Тапас</td>
+          <td>Закуски</td>
+          <td>Первые блюда</td>
+          <td>Вторые блюда</td>
+        </tr>
+        <tr>
+          <th rowspan="3">Аргентинская</th>
+          <td>
+            Empanadas (Эмпанадас)
+            <img src="../Table/Empanadas.jpg" alt="Empanadas" width="90px" />
+          </td>
+          <td>
+            Provoleta (Проволета; сыр проволоне)
+            <img src="../Table/Provoleta.jpg" alt="Provoleta" width="90px" />
+          </td>
+          <td>
+            Cazuela de Mariscos (Казуела)
+            <img src="../Table/Cazuela.jpg" alt="Provoleta" width="70px" />
+          </td>
+          <td>
+            Milanesa Napolitana (Миланеса Неополитана)
+            <img
+              src="../Table/Milanesa Napolitana.jpg"
+              alt="Provoleta"
+              width="90px"
+            />
+          </td>
+          <td>
+            Medialunas (Медиалуны)
+            <img src="../Table/Medialunas.jpg" alt="Provoleta" width="90px" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Chipá (Чипа)
+            <img src="../Table/Chipá.jpg" alt="Provoleta" width="90px" />
+          </td>
+          <td>
+            Tacos de Pollo Y Carne
+            <img
+              src="../Table/Tacos de Pollo Y Carne.jpg"
+              alt="Provoleta"
+              width="90px"
+            />
+          </td>
+          <td>
+            Sancocho (Санкочо)
+            <img src="../Table/Sancocho.jpg" alt="Provoleta" width="90px" />
+          </td>
+          <td>
+            Parrillada Para 2 (Паррилада)
+            <img src="../Table/Parrillada.jpg" alt="Provoleta" width="60px" />
+          </td>
+          <td>
+            Alfajores (Альфахорес)
+            <img src="../Table/Alfajores.jpg" alt="Provoleta" width="60px" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sorrentinos de Jamón Y Queso Con Salsa Mixta (Соррентинос)
+            <img src="../Table/Sorrentinos.jpg" alt="Provoleta" width="60px" />
+          </td>
+          <td>
+            Tortilla de papas (Тортилья)
+            <img src="../Table/Tortilla.jpg" alt="Provoleta" width="60px" />
+          </td>
+          <td>
+            Locro criollo
+            <img src="../Table/Locro.jpg" alt="Provoleta" width="60px" />
+          </td>
+          <td>
+            Cintas Con Salsa de Mariscos (Синтас)
+            <img src="../Table/Cintas.jpg" alt="Provoleta" width="60px" />
+          </td>
+          <td>
+            Churros (Чуррос)
+            <img src="../Table/Сhurros.jpg" alt="Provoleta" width="60px" />
+          </td>
+        </tr>
+      </table>
+    </section>
+    <picture>
+      <source media="(min-width: 800px)" srcset="./Flag.jpg" />
+      <source media="(min-width: 600px)" srcset="./globo.jpg" />
+      <img src="./Food.jpg" alt="default img" />
+    </picture>
+  </body>
+</html>
