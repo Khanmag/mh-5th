@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adaptive</title>
+    <style>
+      section {
+        /* display: flex;
+        flex-wrap: wrap; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 300px);
+      }
+      div {
+        display: inline-block;
+        /* width: 400px; */
+        /* height: 400px; */
+        background-color: red;
+        border: 1px solid black;
+      }
+      @media (max-width: 960px) {
+        section {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 300px);
+        }
+        section > div:last-child {
+          grid-column: span 2;
+        }
+        div {
+          background-color: aquamarine;
+        }
+      }
+      @media (max-width: 600px) {
+        section {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, 300px);
+        }
+        section > div:last-child {
+          grid-column: span 1;
+        }
+        div {
+          background-color: blanchedalmond;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adaptive</h1>
+    <section>
+      <div>123</div>
+      <div>123</div>
+      <div>123</div>
+    </section>
+    <section>
+      <h2>Task</h2>
+      <p>
+        Вывести 3 блока, которые на большом экране имеют ширину по 500рх, высоту
+        300рх. Блоки 1,2,3
+      </p>
+      <p>На экранах меньше 1080рх размер 400/100. Блоки 2,3,1</p>
+      <p>На экранах меньше 780рх размер 300/100. Блоки 3,1.2</p>
+    </section>
+  </body>
+</html>
